@@ -1,0 +1,15 @@
+table,
+tr,
+td,
+input,
+select {
+  border: 1px solid black;
+  padding: 8px;
+}
+input,
+select {
+  border-width: 2px;
+}
+h1 {
+  font-size: 3rem;
+}

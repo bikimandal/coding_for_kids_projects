@@ -1,0 +1,7 @@
+table,
+tr,
+td,
+input,
+select {
+  border: 1px solid black;
+}
