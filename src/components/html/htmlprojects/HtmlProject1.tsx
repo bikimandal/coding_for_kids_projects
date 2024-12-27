@@ -173,7 +173,7 @@ function HtmlProject1() {
                   id="loveComputer"
                   name="loveComputer"
                   min="0"
-                  max="10"
+                  max="100"
                   defaultValue="0"
                   className="w-full"
                 />

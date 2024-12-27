@@ -1,6 +1,9 @@
 function HtmlProject2() {
   return (
     <div className="p-4 max-w-full lg:max-w-3xl mx-auto bg-white rounded-lg shadow-lg">
+      <h1 className="text-center text-4xl font-bold mb-4 text-gray-950">
+        Invitaion Card (HTML Project 2)
+      </h1>
       <h1 className="text-center text-3xl font-bold mb-4 text-teal-600">
         You're Invited to Join the Seminar on English Foundation Course!
       </h1>
