@@ -184,7 +184,7 @@ function HtmlProject1() {
                 <input
                   type="submit"
                   value="Submit"
-                  className="bg-teal-500 text-white px-4 py-2 rounded-md w-full sm:w-auto"
+                  className="bg-teal-500 text-white px-4 py-2 rounded-md w-full sm:w-auto cursor-pointer"
                 />
               </td>
             </tr>
