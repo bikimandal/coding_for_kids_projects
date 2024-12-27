@@ -156,7 +156,7 @@ function HtmlProject1() {
                   type="color"
                   id="favouriteColor"
                   name="favouriteColor"
-                  className="border-2 border-black w-full"
+                  className="border-2 border-black w-full h-14 sm:w-32 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 />
               </td>
             </tr>

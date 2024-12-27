@@ -22,16 +22,13 @@ function PhotoCard({
       <img
         src={imageSrc}
         alt={altText}
-        className="w-full h-80 object-cover mb-2"
+        className="w-full h-72 object-cover mb-2"
       />
-      <p>{caption}</p>
-      <a
-        href={fullImageLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 underline"
-      >
-        View Full Image
+      <p className="font-bold">{caption}</p>
+      <a href={fullImageLink} target="_blank" rel="noopener noreferrer">
+        <button className="text-white bg-blue-500 px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+          View Full Image
+        </button>
       </a>
     </td>
   );
