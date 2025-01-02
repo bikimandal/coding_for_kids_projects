@@ -15,6 +15,11 @@ const Entry: React.FC = () => {
 
         {/* Button Container */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12">
+          <Link to="/scratch">
+            <button className="bg-cyan-500 text-white py-3 px-8 rounded-lg text-xl sm:text-2xl shadow-md transform hover:scale-105 hover:bg-cyan-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-cyan-400 active:scale-95">
+              SCRATCH
+            </button>
+          </Link>
           <Link to="/html">
             <button className="bg-teal-500 text-white py-3 px-8 rounded-lg text-xl sm:text-2xl shadow-md transform hover:scale-105 hover:bg-teal-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-teal-400 active:scale-95">
               HTML
