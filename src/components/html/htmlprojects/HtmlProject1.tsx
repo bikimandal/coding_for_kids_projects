@@ -1,198 +1,153 @@
-import "../../../assets/css/htmlproject1.css";
+import { useState, ChangeEvent } from "react";
 
-function HtmlProject1() {
+export default function HTMLProject1() {
+  const [sessionMode, setSessionMode] = useState("offline");
+
+  const handleSessionChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setSessionMode(event.target.value);
+  };
+
   return (
-    <div className="text-xl flex justify-center items-center flex-col p-4 md:p-10">
-      <h1 className="font-bold text-center text-2xl sm:text-3xl md:text-4xl mb-8">
-        Form Design(HTML Project 1)
-      </h1>
-      <form action="" className="w-full max-w-4xl my-10">
-        <table className="w-full table-auto">
-          <tbody>
-            <tr>
-              <td className="px-2 py-4">
-                <label htmlFor="name" className="block">
-                  <b>Name</b>
-                </label>
-              </td>
-              <td className="px-2 py-4">:</td>
-              <td className="px-2 py-4">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="border-2 border-black px-3 py-2 w-full"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 py-4">
-                <label htmlFor="address" className="block">
-                  <b>Address</b>
-                </label>
-              </td>
-              <td className="px-2 py-4">:</td>
-              <td className="px-2 py-4">
-                <input
-                  type="text"
-                  id="address"
-                  name="address"
-                  className="border-2 border-black px-3 py-2 w-full"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 py-4">
-                <label htmlFor="class" className="block">
-                  <b>Class</b>
-                </label>
-              </td>
-              <td className="px-2 py-4">:</td>
-              <td className="px-2 py-4">
-                <select
-                  name="class"
-                  id="class"
-                  className="border-2 border-black px-3 py-2 w-full"
-                >
-                  <option value="">I</option>
-                  <option value="">II</option>
-                  <option value="">III</option>
-                  <option value="">IV</option>
-                  <option value="">V</option>
-                  <option value="">VI</option>
-                  <option value="">VII</option>
-                  <option value="">VIII</option>
-                  <option value="">IX</option>
-                  <option value="">X</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 py-4">
-                <label htmlFor="contact" className="block">
-                  <b>Contact</b>
-                </label>
-              </td>
-              <td className="px-2 py-4">:</td>
-              <td className="px-2 py-4">
-                <input
-                  type="number"
-                  id="contact"
-                  name="contact"
-                  className="border-2 border-black px-3 py-2 w-full"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 py-4">
-                <label htmlFor="dob" className="block">
-                  <b>D.O.B</b>
-                </label>
-              </td>
-              <td className="px-2 py-4">:</td>
-              <td className="px-2 py-4">
-                <input
-                  type="date"
-                  id="dob"
-                  name="dob"
-                  className="border-2 border-black px-3 py-2 w-full"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 py-4">
-                <label htmlFor="gender" className="block">
-                  <b>Gender</b>
-                </label>
-              </td>
-              <td className="px-2 py-4">:</td>
-              <td className="px-2 py-4">
-                <label htmlFor="male">Male</label>
-                <input
-                  type="radio"
-                  id="male"
-                  name="gender"
-                  value="male"
-                  className="mx-2 transform scale-150"
-                />
-                <label htmlFor="female">Female</label>
-                <input
-                  type="radio"
-                  id="female"
-                  name="gender"
-                  value="female"
-                  className="mx-2 transform scale-150"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 py-4">
-                <label htmlFor="course" className="block">
-                  <b>Course</b>
-                </label>
-              </td>
-              <td className="px-2 py-4">:</td>
-              <td className="px-2 py-4">
-                <select
-                  name="course"
-                  id="course"
-                  className="border-2 border-black px-3 py-2 w-full"
-                >
-                  <option value="">DOM</option>
-                  <option value="">DCST</option>
-                  <option value="">School Course</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 py-4">
-                <label htmlFor="favouriteColor" className="block">
-                  <b>Favourite Colour</b>
-                </label>
-              </td>
-              <td className="px-2 py-4">:</td>
-              <td className="px-2 py-4">
-                <input
-                  type="color"
-                  id="favouriteColor"
-                  name="favouriteColor"
-                  className="border-2 border-black w-full h-14 sm:w-32 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 py-4">
-                <label htmlFor="loveComputer" className="block">
-                  <b>How much do you love computer?</b>
-                </label>
-              </td>
-              <td className="px-2 py-4">:</td>
-              <td className="px-2 py-4">
-                <input
-                  type="range"
-                  id="loveComputer"
-                  name="loveComputer"
-                  min="0"
-                  max="100"
-                  defaultValue="0"
-                  className="w-full"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td className="px-2 py-4" colSpan={3}>
-                <input
-                  type="submit"
-                  value="Submit"
-                  className="bg-teal-500 text-white px-4 py-2 rounded-md w-full sm:w-auto cursor-pointer"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
+    <div className="min-h-screen bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700">
+      {/* Navbar */}
+      <header className="bg-gradient-to-r from-purple-700 to-indigo-500 shadow-lg">
+        <nav className="container mx-auto flex items-center justify-between py-6 px-10">
+          <div className="flex items-center">
+            <img
+              src="/assets/img/logo-rcld.png"
+              alt="Logo"
+              className="h-12 mr-6"
+            />
+            <span className="text-3xl font-semibold text-white">RCLD</span>
+          </div>
+          <ul className="hidden md:flex space-x-12 text-lg text-white">
+            <li>
+              <a href="#home" className="hover:text-yellow-300 transition">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#news" className="hover:text-yellow-300 transition">
+                Notification
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-yellow-300 transition">
+                Courses
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact-us"
+                className="hover:text-yellow-300 transition"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="#about-us" className="hover:text-yellow-300 transition">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* Inquiry Section */}
+      <section className="flex items-center justify-center py-24 bg-gradient-to-r from-teal-400 to-cyan-500">
+        <div className="bg-white p-12 rounded-lg shadow-xl w-full max-w-lg">
+          <h2 className="text-4xl font-semibold text-center text-purple-800 mb-8">
+            Book your Free Session
+          </h2>
+          <p className="text-center text-md text-gray-600 mb-8">
+            Learn from India's top educators in a comfortable environment.
+          </p>
+
+          {/* Session Mode */}
+          <div className="flex justify-center gap-10 mb-8">
+            <div>
+              <input
+                type="radio"
+                id="online"
+                name="session-mode"
+                value="online"
+                checked={sessionMode === "online"}
+                onChange={handleSessionChange}
+                className="hidden"
+              />
+              <label
+                htmlFor="online"
+                className={`cursor-pointer px-8 py-4 text-lg font-medium border-2 border-gray-300 rounded-full text-gray-700 transition-all ${
+                  sessionMode === "online"
+                    ? "bg-purple-600 text-white border-purple-600"
+                    : "hover:bg-purple-100"
+                }`}
+              >
+                Online
+              </label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="offline"
+                name="session-mode"
+                value="offline"
+                checked={sessionMode === "offline"}
+                onChange={handleSessionChange}
+                className="hidden"
+              />
+              <label
+                htmlFor="offline"
+                className={`cursor-pointer px-8 py-4 text-lg font-medium border-2 border-gray-300 rounded-full text-gray-700 transition-all ${
+                  sessionMode === "offline"
+                    ? "bg-purple-600 text-white border-purple-600"
+                    : "hover:bg-purple-100"
+                }`}
+              >
+                Offline
+              </label>
+            </div>
+          </div>
+
+          {/* Input Fields */}
+          <div className="mb-6">
+            <input
+              type="text"
+              placeholder="Enter Name of your Child"
+              className="w-full px-6 py-4 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none text-gray-700"
+            />
+          </div>
+          <div className="relative mb-6">
+            <input
+              type="text"
+              placeholder="Enter your Mobile Number"
+              className="w-full px-6 py-4 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none text-gray-700"
+            />
+            <button className="absolute top-0 right-0 px-6 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg hover:bg-gradient-to-l transition-all">
+              Send OTP
+            </button>
+          </div>
+          <div className="mb-6">
+            <input
+              type="text"
+              placeholder="Email Address"
+              className="w-full px-6 py-4 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none text-gray-700"
+            />
+          </div>
+          <div className="mb-8">
+            <select className="w-full px-6 py-4 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none text-gray-700">
+              <option value="">Select State</option>
+              <option value="state1">State 1</option>
+              <option value="state2">State 2</option>
+            </select>
+          </div>
+
+          {/* Submit Button */}
+          <button className="w-full py-4 bg-gradient-to-r from-blue-600 to-indigo-500 text-white rounded-lg hover:bg-gradient-to-l transition-all">
+            Continue to Schedule
+          </button>
+        </div>
+      </section>
     </div>
   );
 }
-
-export default HtmlProject1;
