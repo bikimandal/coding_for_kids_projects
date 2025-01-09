@@ -86,7 +86,7 @@ const JavaProject1: React.FC = () => {
       </div>
 
       <footer className="mt-6 text-center text-gray-600 text-sm">
-        &copy; 2024 RCLD. All rights reserved.
+        &copy; 2025 RCLD. All rights reserved.
       </footer>
     </div>
   );
