@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo"; // Import the Logo component
+import Footer from "./Footer";
 
 const Entry: React.FC = () => {
   return (
@@ -37,6 +38,7 @@ const Entry: React.FC = () => {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

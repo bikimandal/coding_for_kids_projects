@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Logo"; // Import Logo component
+import Footer from "../Footer";
 
 const ScratchPage: React.FC = () => {
   return (
@@ -39,6 +40,7 @@ const ScratchPage: React.FC = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

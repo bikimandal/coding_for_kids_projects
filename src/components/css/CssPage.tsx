@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Logo"; // Import the Logo component
+import Footer from "../Footer";
 
 const CssPage: React.FC = () => {
   return (
@@ -39,6 +40,7 @@ const CssPage: React.FC = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
